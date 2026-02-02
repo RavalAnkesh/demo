@@ -27,7 +27,7 @@ public class EmpDetailsService {
 
     public EmpDetails findByEmpId(Long empid){
         return empDetailsRepository.findById(empid)
-                .orElseThrow(()->new ResponseStatusException(HttpStatus.NOT_FOUND,"Not user found"));
+                .orElseThrow(()->new ResponseStatusException(HttpStatus.NOT_FOUND,"Not User found"));
     }
 
     public List<EmpDetails> findByEmpname(String empname){
@@ -51,3 +51,4 @@ public class EmpDetailsService {
         empDetailsRepository.deleteById(empid);
     }
 }
+
