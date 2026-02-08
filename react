@@ -30,8 +30,7 @@ function Login() {
       return;
     }
 
-    setError("");
-    alert(" Login successful");
+    setError("Login Successful");
 
     userRef.current.style.color = color;
     passRef.current.style.color = color;
