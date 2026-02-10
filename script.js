@@ -1,4 +1,4 @@
-/* LOGIN */
+
 function login() {
   let user = document.getElementById("username").value;
   let pass = document.getElementById("password").value;
@@ -49,3 +49,4 @@ document.getElementById("reset").addEventListener("click", () => {
   count = 0;
   countText.innerText = count;
 });
+
