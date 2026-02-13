@@ -16,7 +16,8 @@ Contract details are received in the request body and stored in the database.
 Endpoint: /ecms/createclause
 Method: POST
 Purpose:
-This API is used to create a new clause under a specific section in the contract. The clause details are received in the request body and stored in the database.
+This API is used to create a new clause under a specific section in the contract. 
+The clause details are received in the request body and stored in the database.
 
 
 3) POST API – Upload Document in Section Clause
