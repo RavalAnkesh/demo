@@ -32,4 +32,5 @@ It stores the uploaded file in the server and links it to the respective section
 Endpoint: /ecms/documentList/Contract
 Method: POST
 Purpose:
-This API is used to set the status of contracts and implement pagination by specifying page number and limit. It helps fetch contract lists dynamically based on filters and pagination parameters.
+This API is used to set the status of contracts and implement pagination by specifying page number and limit. 
+It helps fetch contract lists dynamically based on filters and pagination parameters.
