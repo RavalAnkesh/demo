@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Calculator + Counter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div id="loginBox">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button onclick="login()">Login</button>
+    <p id="error"></p>
+  </div>
+
+  <div id="app">
+    <button class="logout" onclick="logout()">Logout</button>
+
+    <table>
+      <tr><th colspan="4">Calculator</th></tr>
+      <tr>
+        <td colspan="4">
+          <input type="text" id="display" disabled>
+        </td>
+      </tr>
+      <tr>
+        <td><button onclick="press('1')">1</button></td>
+        <td><button onclick="press('2')">2</button></td>
+        <td><button onclick="press('3')">3</button></td>
+        <td><button class="operator" onclick="press('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="press('4')">4</button></td>
+        <td><button onclick="press('5')">5</button></td>
+        <td><button onclick="press('6')">6</button></td>
+        <td><button class="operator" onclick="press('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="press('7')">7</button></td>
+        <td><button onclick="press('8')">8</button></td>
+        <td><button onclick="press('9')">9</button></td>
+        <td><button class="operator" onclick="press('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="press('0')">0</button></td>
+        <td><button class="equal" onclick="calculate()">=</button></td>
+        <td><button class="clear" onclick="clearAll()">C</button></td>
+        <td><button class="operator" onclick="press('/')">/</button></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr><th colspan="3">Counter</th></tr>
+      <tr>
+        <td colspan="3" class="count" id="count">0</td>
+      </tr>
+      <tr>
+        <td><button id="inc">+</button></td>
+        <td><button id="dec">-</button></td>
+        <td><button class="reset" id="reset">Reset</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js" ></script>
+</body>
+</html>
+

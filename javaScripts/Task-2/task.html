@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Task Manager</title>
+</head>
+    <body>
+        <div>
+            <h2>Task Manager App</h2>
+            <input type="text" id="taskinput" placeholder="Enter task..."required>
+            <input type="date" id="taskdate" required/>
+            <button id="addtask">Add</button>    
+           
+            <hr>
+                <input type="text" id="search" placeholder="Search task...">
+                <button onclick="assending()">Sort Assending </button>
+                <button onclick="desending()">Sort Dessending</button>
+            <hr>
+            <div>
+                <button id="all">All</button>
+                <button id="active">Active</button>
+                <button id="complete">Complete</button>
+            </div>
+            <hr>
+            <ul id="tasklist"></ul>
+            <hr>
+            <button id="clear">Clear All</button>
+        </div>
+        <script src="task.js"></script>
+    </body> 
+</html> 

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced To-Do App</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 40px;
+      transition: 0.3s;
+    }
+
+    .container {
+      width: 450px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px gray;
+    }
+
+    input {
+      padding: 8px;
+      width: 65%;
+    }
+
+    button {
+      padding: 6px 10px;
+      margin: 3px;
+      cursor: pointer;
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      margin: 8px 0;
+      padding: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f4f4f4;
+      border-radius: 5px;
+    }
+
+    .completed {
+      text-decoration: line-through;
+      color: rgb(63, 94, 64);
+    }
+
+    .theme-buttons button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Advanced To-Do App</h2>
+
+  <input type="text" id="todoInput" placeholder="Enter task">
+  <button id="addTodoBtn">Add</button>
+
+  <p id="taskCount">Total tasks: 0</p>
+
+  <ul id="todoList"></ul>
+
+  <button id="clearAllBtn">Clear All</button>
+
+  <hr>
+
+  <div class="theme-buttons">
+    <p>Change Theme:</p>
+    <button id="redBtn">Red</button>
+    <button id="greenBtn">Green</button>
+    <button id="blueBtn">Blue</button>
+  </div>
+</div>
+
+<script src="dom.js">
+  
+</script>
+
+</body>
+</html>

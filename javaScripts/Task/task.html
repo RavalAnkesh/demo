@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Student Feedback Manager</title>
+  
+</head>
+<body>
+
+  <div class="container">
+    <h2>Student Feedback Manager</h2>
+
+    <form>
+        <div>
+            <label for="name">Student Name:</label><br>
+            <input type="text" id="name" placeholder="Enter student name" required>
+        </div>
+        <br>
+      
+        <div>
+            <label for="feedback">Feedback:</label><br>
+            <input id="feedback" placeholder="Enter feedback" required></input>
+        </div>
+        <br>
+      
+        <button type="submit"onclick="handleSubmit(event)">Submit</button>
+      
+    </form>
+    <br>
+   
+    <div class="result" id="result"></div>
+
+  <script src="task.js"></script>
+</body>
+</html>

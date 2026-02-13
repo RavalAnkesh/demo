@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        form {
+            width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"],
+        input[type="number"],
+        textarea{
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button{
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: rgb(30, 219, 124);
+        }
+        label.text{
+            text-decoration-color: rgb(57, 226, 147);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <center><h2>Student Detail Form</h2></center>
+        RollNumber:<input type="number" id="rollnumber" placeholder="Enter Student name" required><br>
+        StudentName:<input type="text" id="sname"placeholder="Enter Student name" required><br><br>
+         <lable>Enter Mark Of Student</lable> <br>
+        Gujrati:<input type="number" id="gujarti"placeholder="Enter Mark Of Gujrati"required><br>
+        Science:<input type="number" id="science"placeholder="Enter Mark Of Science"required><br>
+        Math:<input type="number" id="math"placeholder="Enter Mark Of Math"required><br>
+        English:<input type="number" id="english"placeholder="Enter Mark Of English"required><br>
+
+        <button type="submit" onclick="calculate()">Submit</button>
+        <div id="resultBox" style="display:none;"></div>
+
+    </form>
+    <script src="student.js"></script>
+</body>
+</html>
