@@ -1,1 +1,31 @@
 
+During this week, I worked on backend development for the ECMS project using Java and Spring Boot. My responsibility was to design, develop, and test RESTful APIs related to document and contract management.
+ 
+APIs DEVELOPED THIS WEEK
+
+1) POST API – Create Contract
+Endpoint: /ecms/createstandalonecontract
+Method: POST
+Purpose:
+This API is used to create a new standalone contract in the system. Contract details are received in the request body and stored in the database.
+
+
+2) POST API – Create Section Clause
+Endpoint: /ecms/createclause
+Method: POST
+Purpose:
+This API is used to create a new clause under a specific section in the contract. The clause details are received in the request body and stored in the database.
+
+
+3) POST API – Upload Document in Section Clause
+Endpoint: /ecms/section/{documentId}/section/{sectionId}/upload
+Method: POST
+Purpose:
+This API uploads a document and associates it with a specific section clause in the system. It stores the uploaded file in the server and links it to the respective section.
+
+
+4) POST API – Set Status, Page, and Limit
+Endpoint: /ecms/documentList/Contract
+Method: POST
+Purpose:
+This API is used to set the status of contracts and implement pagination by specifying page number and limit. It helps fetch contract lists dynamically based on filters and pagination parameters.
