@@ -24,7 +24,8 @@ The clause details are received in the request body and stored in the database.
 Endpoint: /ecms/section/{documentId}/section/{sectionId}/upload
 Method: POST
 Purpose:
-This API uploads a document and associates it with a specific section clause in the system. It stores the uploaded file in the server and links it to the respective section.
+This API uploads a document and associates it with a specific section clause in the system. 
+It stores the uploaded file in the server and links it to the respective section.
 
 
 4) POST API – Set Status, Page, and Limit
