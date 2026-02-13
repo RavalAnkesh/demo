@@ -8,7 +8,8 @@ APIs DEVELOPED THIS WEEK
 Endpoint: /ecms/createstandalonecontract
 Method: POST
 Purpose:
-This API is used to create a new standalone contract in the system. Contract details are received in the request body and stored in the database.
+This API is used to create a new standalone contract in the system. 
+Contract details are received in the request body and stored in the database.
 
 
 2) POST API – Create Section Clause
