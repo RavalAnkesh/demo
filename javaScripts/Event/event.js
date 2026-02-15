@@ -14,7 +14,7 @@ hoverBtn.addEventListener("mouseover", () => {
 });
 
 hoverBtn.addEventListener("mouseout", () => {
-  hoverBtn.textContent = "Hover over me";
+  hoverBtn.textContent = "Hover event occure...";
 });
 
 
@@ -99,4 +99,5 @@ window.addEventListener("resize", () => {
   resizeMsg.textContent = 
     "Window size: " + window.innerWidth + " x " + window.innerHeight;
 });
+
 
