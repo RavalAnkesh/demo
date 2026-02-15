@@ -2,7 +2,7 @@ const button = document.getElementById("myButton");
 const output = document.getElementById("output");
 
 button.addEventListener("click", () => {
-  output.textContent = "Button Click Event Triggered!";
+  output.textContent = "Button Click Event Accured!";
 });
 
 
@@ -99,3 +99,4 @@ window.addEventListener("resize", () => {
   resizeMsg.textContent = 
     "Window size: " + window.innerWidth + " x " + window.innerHeight;
 });
+
