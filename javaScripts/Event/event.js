@@ -24,7 +24,7 @@ const dblBtn = document.getElementById("dblBtn");
 const dblMsg = document.getElementById("dblMsg");
 
 dblBtn.addEventListener("dblclick", () => {
-  dblMsg.textContent = "Double Click Event Triggered!";
+  dblMsg.textContent = "Double Click Event Occured!";
 });
 
 
@@ -99,5 +99,6 @@ window.addEventListener("resize", () => {
   resizeMsg.textContent = 
     "Window size: " + window.innerWidth + " x " + window.innerHeight;
 });
+
 
 
