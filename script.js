@@ -16,7 +16,7 @@ function logout() {
   document.getElementById("loginBox").style.display = "block";
 }
 
-/* CALC
+
 let display = document.getElementById("display");
 
 function press(val) {
@@ -49,5 +49,6 @@ document.getElementById("reset").addEventListener("click", () => {
   count = 0;
   countText.innerText = count;
 });
+
 
 
