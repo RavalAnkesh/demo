@@ -3,7 +3,7 @@ function login() {
   let user = document.getElementById("username").value;
   let pass = document.getElementById("password").value;
 
-  if (user === "admin" && pass === "123") {
+  if (user === "admin" && pass === "admin123") {
     document.getElementById("loginBox").style.display = "none";
     document.getElementById("app").style.display = "flex";
   } else {
@@ -49,6 +49,7 @@ document.getElementById("reset").addEventListener("click", () => {
   count = 0;
   countText.innerText = count;
 });
+
 
 
 
