@@ -8,11 +8,14 @@
             <input type="text" id="taskinput" placeholder="Enter task..."required>
             <input type="date" id="taskdate" required/>
             <button id="addtask">Add</button>    
-           
+           <hr>
+           <input type="text" id="search" placeholder="Search task...">
             <hr>
-                <input type="text" id="search" placeholder="Search task...">
-                <button onclick="assending()">Sort Assending </button>
-                <button onclick="desending()">Sort Dessending</button>
+                
+                <button onclick="assending()">Name Ascending </button>
+                <button onclick="desending()">Name Descending</button>
+                <button onclick="sortByDateAscending()">Date Ascending </button>
+                <button onclick="sortByDateDescending()">Date Descending</button>
             <hr>
             <div>
                 <button id="all">All</button>

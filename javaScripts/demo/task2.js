@@ -37,6 +37,7 @@ function show() {
 
     if (task.completed) {
       text.style.textDecoration = "line-through";
+      text.style.color = "green"
     }
 
     text.onclick = function () {

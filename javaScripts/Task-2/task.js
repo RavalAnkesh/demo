@@ -38,12 +38,20 @@ function show() {
     filtertask = tasks.filter(t => t.completed)
   }
 
+  if (filtertask.length === 0) {
+    
+    let msg = document.createElement("li");
+    msg.textContent = "No task Found...";
+    msg.style.color = "red";
+    msg.style.fontStyle = "italic";
+    listtask.appendChild(msg);
+    return; 
+  }
 
-
-  const searchText = searchInput.value.toLowerCase()
-  if (searchText !== "") {
+  const s = searchInput.value.toLowerCase()
+  if (s !== "") {
     filtertask = filtertask.filter(t =>
-      t.text.toLowerCase().includes(searchText)
+      t.text.toLowerCase().includes(s)
     )
   }
 
@@ -100,7 +108,9 @@ function show() {
 
     if (task.completed) {
         text.style.color = "#11e809"
-    }
+        text.style.textDecoration = "line-through";
+        text.style.textDecorationColor = "red";
+      }
 
 
     let edit = document.createElement("button")
@@ -158,13 +168,14 @@ input.addEventListener("keydown", function (e) {
   if (e.key === "Enter") {
     taskdate.focus()
   }                                       
-  taskdate.addEventListener("keydown", function(e){
-    if(e.key === "Enter"){
-      addbtn.click()
-    }
-  })
+  
 })
 
+taskdate.addEventListener("keydown", function(e){
+  if(e.key === "Enter"){
+    addbtn.click()
+  }
+})
 
 
 
@@ -191,12 +202,12 @@ document.addEventListener("keydown", function(e) {
 
 
 
-
+ 
 allbtn.onclick = function () {
   filter = "all"
   show()
 }
-
+ 
 activebtn.onclick = function () {
   filter = "active"
   show()
@@ -227,6 +238,26 @@ function desending() {
   )
   save()
   show()
+}
+
+function sortByDateAscending() {
+  tasks.sort((a, b) => {
+    if (!a.dueDate) return 1; 
+    if (!b.dueDate) return -1;
+    return new Date(a.dueDate) - new Date(b.dueDate);
+  });
+  save();
+  show();
+}
+
+function sortByDateDescending() {
+  tasks.sort((a, b) => {
+    if (!a.dueDate) return 1;
+    if (!b.dueDate) return -1;
+    return new Date(b.dueDate) - new Date(a.dueDate);
+  });
+  save();
+  show();
 }
 
 

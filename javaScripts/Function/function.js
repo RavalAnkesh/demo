@@ -9,8 +9,8 @@ const isOdd = num => num % 2 !== 0;
 const evenNums = nums.filter(isEven);   
 const oddNums = nums.filter(isOdd);     
 
-document.write("<h3>Even Number  ", evenNums+"</h3>");
-document.write("<h3>Odd Number : ", oddNums+"</h3>");
+document.write("<h3>Even Numbers  ", evenNums+"</h3>");
+document.write("<h3>Odd Numbers : ", oddNums+"</h3>");
 
 
 
@@ -20,7 +20,7 @@ document.write("<br>")
 const cart = [
     {name:"TV",price:70000},
     {name:"Fridge",price:45000},
-    {name:"Mobile",price:25500},
+    {name:"mobile",price:25500},
     {name:"AC",price:41800}
 ]
 
@@ -112,4 +112,3 @@ for (let i = 0; i < cart.length; i++) {
     document.write("<li>" + cart[i].name + " , " + cart[i].price + "</li>");
 }
 document.write("</ul>");
-

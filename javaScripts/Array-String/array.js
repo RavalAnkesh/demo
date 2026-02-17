@@ -37,7 +37,7 @@ language.pop();
 document.write("Pop: " + language + "<br>");
 
 language.shift();
-document.write("Delete From Beginning: " + language + "<br>");
+document.write("Shift : " + language + "<br>");
 
 language.reverse();
 document.write("Reverse: " + language + "<br>");

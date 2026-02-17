@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Funcion  Task Manager</title>
+    </head>
+    <body>
+        <h2>Function Task Manager</h2>
+        <hr>
+        <input type="text" id="input" placeholder="Enter Task...."/>
+        <input type="date" id="duedate">
+        <button id="addbtn">Add</button>
+        <hr>
+        <input type="text" id="search" placeholder="Search tasks...">
+        <button onclick="sortByName()">Sort by Task</button>
+        <button onclick="sortByDate()">Sort By Date</button>
+
+        <hr>
+        <div>
+            <button id="all">All</button>
+            <button id="active">Active</button>
+            <button id="complete">Complete</button>
+        </div>
+        <hr> 
+        <ul id="tasklist"></ul>
+        <hr>
+        <button id="clear">Clear All</button>
+        <script src="function.js"></script>
+    </body>
+</html>

@@ -1,0 +1,230 @@
+JAVASCRIPT
+------------------------
+	Variable
+------------------------
+The var keyword is used to declare a variable. It has a function-scoped or globally-scoped behaviour.
+var n = 5;
+console.log(n);
+
+var n = 20; // reassigning is allowed
+console.log(n);
+.......................................
+(let)block scope and cannot be re-declared in the same scope.
+let no=10;
+no=30;
+console.log(no);
+.......................................
+(const)The const keyword declares variables that cannot be reassigned. It's block-scoped as well.
+const num=10;
+//num=20(not allowed)
+......................................
+		DATA TYPES
+(1) Primitive : Primitive datatypes represent single values and are immutable.
+------------------------------------
+1. Number: Represents numeric values (integers and decimals).
+let n = 42; 
+let pi = 3.14;
+
+2. String: Represents text enclosed in single or double quotes.
+let s = "Hello, World!";
+
+3. Boolean: Represents a logical value (true or false).
+let bool= true;
+
+4. Undefined: A variable that has been declared but not assigned a value.
+let notAssigned;
+console.log(notAssigned);
+Output
+undefined
+
+5. Null: Represents an intentional absence of any value.
+let empty = null;
+
+6. Symbol: Represents unique and immutable values, often used as object keys.
+let sym = Symbol('unique');
+
+7. BigInt: Represents integers larger than Number.MAX_SAFE_INTEGER.
+let bigNumber = 123456789012345678901234567890n;
+-------------------------------------------------------
+(2)Non Primitive
+---------------------------------------------------
+1. Object: Represents key-value pairs.
+let obj = {
+    name: "A",
+    age: 25
+}
+
+2. Array: Represents list of values.
+let a = ["red", "green", "blue"];
+
+3. Function: Represents reusable blocks of code.
+function fun() {
+    console.log("Hello world");
+}
+
+
+------------------------------------------------------
+		Operator
+-----------------------------------------------------
+[1] Arithmetic
++ adds two numbers.
+- subtracts the second number from the first.
+* multiplies two numbers.
+/ divides the first number by the second.
+
+[2] Assignment
+= assigns a value to a variable.
++= adds and assigns the result to the variable.
+*= multiplies and assigns the result to the variable.
+
+[3]Comparison 
+> checks if the left value is greater than the right.
+=== checks for strict equality (both type and value).
+ <, <=, >=, and !==
+
+[4]Logical
+&& returns true if both operands are true.
+|| returns true if at least one operand is true.
+! negates the boolean value.
+
+[5]Bitwise
+& performs a bitwise AND.
+| performs a bitwise OR.
+^ performs a bitwise XOR.
+~ performs a bitwise NOT.
+
+[6]ternary
+const age = 18;
+const status = age >= 18 ? "Adult" : "Minor";
+console.log(status);
+
+[7]unary
+++ increments the value by 1.
+-- decrements the value by 1.
+
+---------------------------------------------
+	Control Statment
+-------------------------------------------
+[1]If Statement
+In this approach, we are using an if statement to check a specific condition,
+the code block gets executed when the given condition is satisfied.
+
+[2]if-else
+when condition of if is setisfied execute if otherwise execute else 
+
+[3] for loop
+In this approach using for loop in which the execution of a set of instructions 
+repeatedly until some condition evaluates and becomes false.
+
+[4]while
+The while loop repeats a block of code as long as a specified condition is true.
+
+[5]do-while
+This means the code block will execute at least once, even if the condition is false.
+---------------------------------------------------------------------------------
+
+Array Method
+--------------------------------------------------------------------------------
+toString()
+Converts the array into a comma-separated string.                        ---arr.toString()
+
+length
+Returns the total number of elements present in the array.               --arr.length()
+
+typeof									--typeof(arr)
+Returns the data type of the array.
+(In JavaScript, arrays are treated as objects.)
+
+push()									--arr.push(value)
+Adds a new element to the end of the array.
+
+pop()									--arr.pop()
+Removes the last element from the array.
+
+join()									-- arr.join(' any symbol')
+Joins all array elements into a single string using a specified 	
+
+unshift()								--arr.unshift(value)
+Adds one or more elements to the beginning of the array.
+
+shift()									--arr.shift()
+Removes the first element from the array.
+
+reverse()								--arr.reverse()
+Reverses the order of elements in the array.
+
+concat()								--arr1.concat(arr2)
+Combines two or more arrays and returns a new array without changing the original arrays.
+
+delete									-- delete arr[index no]
+Deletes an element at a specified index but does not change the array length.
+The deleted position becomes empty.
+
+map()									--arr.map(element => condition)			arr.map(n => n*2)
+Creates a new array by performing an operation on each element of the original array.
+The original array remains unchanged.
+
+slice()									--arr.slice(startindex , endindex)
+Extracts a portion of an array and returns it as a new array.
+The original array is not modified.
+
+splice()								--arr.splice(start , deletecount)
+Used to remove or modify elements from an array.
+It changes the original array and returns the removed elements.
+
+filter()								--arr.filter(element => condition)	arr.filter(n=> n%2==0)give even number
+Creates a new array with selected elements
+Used when you want elements that match a condition
+
+find()									--arr.find(element =>condition)      	arr.find(n => n>10)
+It stops at first match (30)
+It does NOT return all matches
+It does NOT check further once found
+
+every()									--arr.every(callback(element, index, array))   arr.every(n => n<20)
+if all array element setisfy the condition is true otherwise false
+----------------------------------------------------------
+String Methods
+---------------------------------------------------------
+slice()									--str.slice(startindex , endindex)
+Extracts a part of a string and returns it as a new string.
+
+substr()								--str.substr(startindex , length)
+Extracts a string starting from a specified position with a given length.
+
+substring()								--str.substring(start , end)
+Extracts characters between two specified index values.
+substring() does not accept negative numbers
+
+replace()								--str.replace(oldvalue , newvalue)
+Replaces a specified value in the string with another value.
+
+toUpperCase()								--str.toUpperCase()
+Converts the entire string into uppercase letters.
+
+toLowerCase()								--str.toLowerCase()
+Converts the entire string into lowercase letters.
+
+trim()									--str.trim()
+Removes whitespace from both the beginning and end of a string.
+
+
+include()								--str.include("value for check")
+Checks if a string contains a substring
+Returns true or false
+
+startWith()								--str.startWith("value")
+Checks if a string starts with a given substring
+
+endWith()								--str.endWith("value")
+Checks if a string ends with a given substring
+
+charAt()								--str.charAt(index)
+Returns the character at a specified index
+
+charCodeAt()								--str.charCodeAt(index)
+Returns the character at a specified index
+
+splite()								--str.splite("separator")
+Splits a string into an array of substrings based on a separator
+

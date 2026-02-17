@@ -2,7 +2,7 @@ const button = document.getElementById("myButton");
 const output = document.getElementById("output");
 
 button.addEventListener("click", () => {
-  output.textContent = "Button Click Event Accured!";
+  output.textContent = "Button Click Event Triggered!";
 });
 
 
@@ -14,7 +14,7 @@ hoverBtn.addEventListener("mouseover", () => {
 });
 
 hoverBtn.addEventListener("mouseout", () => {
-  hoverBtn.textContent = "Hover event occure...";
+  hoverBtn.textContent = "Hover over me";
 });
 
 
@@ -24,7 +24,7 @@ const dblBtn = document.getElementById("dblBtn");
 const dblMsg = document.getElementById("dblMsg");
 
 dblBtn.addEventListener("dblclick", () => {
-  dblMsg.textContent = "Double Click Event Occured!";
+  dblMsg.textContent = "Double Click Event Triggered!";
 });
 
 
@@ -99,6 +99,3 @@ window.addEventListener("resize", () => {
   resizeMsg.textContent = 
     "Window size: " + window.innerWidth + " x " + window.innerHeight;
 });
-
-
-
