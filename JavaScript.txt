@@ -1,7 +1,7 @@
 JAVASCRIPT
-------------------------
-	Variable
-------------------------
+----------------------------------------------------------------------------------------------------
+					Variable
+-------------------------------------------------------------------------------------------------------
 The var keyword is used to declare a variable. It has a function-scoped or globally-scoped behaviour.
 var n = 5;
 console.log(n);
@@ -17,10 +17,12 @@ console.log(no);
 (const)The const keyword declares variables that cannot be reassigned. It's block-scoped as well.
 const num=10;
 //num=20(not allowed)
-......................................
-		DATA TYPES
-(1) Primitive : Primitive datatypes represent single values and are immutable.
-------------------------------------
+
+......................................-------------------------------------------------------------------------------------------
+				DATA TYPES
+------------------------------------------------------------------------------------------------------------------------------
+	(1) Primitive : Primitive datatypes represent single values and are immutable.
+---------------------------------------------------------------------------------
 1. Number: Represents numeric values (integers and decimals).
 let n = 42; 
 let pi = 3.14;
@@ -45,9 +47,10 @@ let sym = Symbol('unique');
 
 7. BigInt: Represents integers larger than Number.MAX_SAFE_INTEGER.
 let bigNumber = 123456789012345678901234567890n;
--------------------------------------------------------
-(2)Non Primitive
----------------------------------------------------
+
+------------------------------------------------------------------------------
+		(2)Non Primitive
+-------------------------------------------------------------------------------
 1. Object: Represents key-value pairs.
 let obj = {
     name: "A",
@@ -63,9 +66,9 @@ function fun() {
 }
 
 
-------------------------------------------------------
-		Operator
------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+						OPERATOR
+------------------------------------------------------------------------------------------------------------------------------------
 [1] Arithmetic
 + adds two numbers.
 - subtracts the second number from the first.
@@ -102,9 +105,9 @@ console.log(status);
 ++ increments the value by 1.
 -- decrements the value by 1.
 
----------------------------------------------
-	Control Statment
--------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+								CONTROL STATMENT
+------------------------------------------------------------------------------------------------------------------------------------
 [1]If Statement
 In this approach, we are using an if statement to check a specific condition,
 the code block gets executed when the given condition is satisfied.
@@ -121,110 +124,154 @@ The while loop repeats a block of code as long as a specified condition is true.
 
 [5]do-while
 This means the code block will execute at least once, even if the condition is false.
----------------------------------------------------------------------------------
 
-Array Method
---------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------
+								ARRAY METHODS
+-------------------------------------------------------------------------------------------------------------------------------------
+
 toString()
 Converts the array into a comma-separated string.                        ---arr.toString()
-
+...........................................................................................................
 length
 Returns the total number of elements present in the array.               --arr.length()
-
+...........................................................................................................
 typeof									--typeof(arr)
 Returns the data type of the array.
 (In JavaScript, arrays are treated as objects.)
-
+...........................................................................................................
 push()									--arr.push(value)
 Adds a new element to the end of the array.
-
+...........................................................................................................
 pop()									--arr.pop()
 Removes the last element from the array.
-
+...........................................................................................................
 join()									-- arr.join(' any symbol')
 Joins all array elements into a single string using a specified 	
-
+...........................................................................................................
 unshift()								--arr.unshift(value)
 Adds one or more elements to the beginning of the array.
-
+...........................................................................................................
 shift()									--arr.shift()
 Removes the first element from the array.
-
+...........................................................................................................
 reverse()								--arr.reverse()
 Reverses the order of elements in the array.
-
+...........................................................................................................
 concat()								--arr1.concat(arr2)
 Combines two or more arrays and returns a new array without changing the original arrays.
-
+...........................................................................................................
 delete									-- delete arr[index no]
 Deletes an element at a specified index but does not change the array length.
 The deleted position becomes empty.
-
+...........................................................................................................
 map()									--arr.map(element => condition)			arr.map(n => n*2)
 Creates a new array by performing an operation on each element of the original array.
 The original array remains unchanged.
-
+...........................................................................................................
 slice()									--arr.slice(startindex , endindex)
 Extracts a portion of an array and returns it as a new array.
 The original array is not modified.
-
+...........................................................................................................
 splice()								--arr.splice(start , deletecount)
 Used to remove or modify elements from an array.
 It changes the original array and returns the removed elements.
-
+...........................................................................................................
 filter()								--arr.filter(element => condition)	arr.filter(n=> n%2==0)give even number
 Creates a new array with selected elements
 Used when you want elements that match a condition
-
+...........................................................................................................
 find()									--arr.find(element =>condition)      	arr.find(n => n>10)
 It stops at first match (30)
 It does NOT return all matches
 It does NOT check further once found
-
+...........................................................................................................
 every()									--arr.every(callback(element, index, array))   arr.every(n => n<20)
 if all array element setisfy the condition is true otherwise false
-----------------------------------------------------------
-String Methods
----------------------------------------------------------
+...........................................................................................................
+reduce()
+Used to reduce an array to a single value (sum, total, object, etc.)
+............................................
+arr.reduce((accumulator, currentValue) => {
+   return result;
+}, initialValue);
+............................................
+let numbers = [10, 20, 30];
+let total = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(total);
+...........................................................................................................
+some()
+Checks if at least one element satisfies a condition.
+Returns true or false
+Stops when first match is found
+......................................
+let numbers = [5, 8, 12];
+let result = numbers.some(num => num > 10);
+console.log(result); 
+...........................................................................................................
+includes()								--arr.includes("value")
+Checks if an array contains a specific value.
+...........................................................................................................
+sort()									--arr.sort()
+sort the array.
+arr.sort((a, b) => a - b);  // Ascending numbers
+arr.sort((a, b) => b - a);  // Descending numbers
+...........................................................................................................
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+							STRING METHODS
+---------------------------------------------------------------------------------------------------------------------------------------------
+
 slice()									--str.slice(startindex , endindex)
 Extracts a part of a string and returns it as a new string.
-
+...........................................................................................................
 substr()								--str.substr(startindex , length)
 Extracts a string starting from a specified position with a given length.
-
+............................................................................................................
 substring()								--str.substring(start , end)
 Extracts characters between two specified index values.
 substring() does not accept negative numbers
-
+...........................................................................................................
 replace()								--str.replace(oldvalue , newvalue)
 Replaces a specified value in the string with another value.
-
+...........................................................................................................
 toUpperCase()								--str.toUpperCase()
 Converts the entire string into uppercase letters.
-
+...........................................................................................................
 toLowerCase()								--str.toLowerCase()
 Converts the entire string into lowercase letters.
-
+...........................................................................................................
 trim()									--str.trim()
 Removes whitespace from both the beginning and end of a string.
-
-
+...........................................................................................................
 include()								--str.include("value for check")
 Checks if a string contains a substring
 Returns true or false
-
+...........................................................................................................
 startWith()								--str.startWith("value")
 Checks if a string starts with a given substring
-
+...........................................................................................................
 endWith()								--str.endWith("value")
 Checks if a string ends with a given substring
-
+...........................................................................................................
 charAt()								--str.charAt(index)
 Returns the character at a specified index
-
+...........................................................................................................
 charCodeAt()								--str.charCodeAt(index)
 Returns the character at a specified index
-
+...........................................................................................................
 splite()								--str.splite("separator")
 Splits a string into an array of substrings based on a separator
 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+									LOCAL STORAGE
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+localStorage.setItem("key","value")
+
+let value=localStorage.getItem("key")
+
+localStorage.removeItem("key")
+
+localStorage.clear()
