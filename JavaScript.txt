@@ -16,7 +16,7 @@ console.log(no);
 .......................................
 (const)The const keyword declares variables that cannot be reassigned. It's block-scoped as well.
 const num=10;
-//num=20(not allowed)
+//num=20(not allowed).
 
 ......................................-------------------------------------------------------------------------------------------
 				DATA TYPES
@@ -273,5 +273,6 @@ localStorage.setItem("key","value")
 let value=localStorage.getItem("key")
 
 localStorage.removeItem("key")
+
 
 localStorage.clear()
