@@ -6,7 +6,7 @@ The var keyword is used to declare a variable. It has a function-scoped or globa
 var n = 5;
 console.log(n);
 
-var n = 20; // reassigning is allowed
+var n = 20; // reassigning is allowed.
 console.log(n);
 .......................................
 (let)block scope and cannot be re-declared in the same scope.
@@ -276,3 +276,4 @@ localStorage.removeItem("key")
 
 
 localStorage.clear()
+
