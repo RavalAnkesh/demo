@@ -53,7 +53,7 @@ class SavingAccount extends BankAccount {
 const myAccount = new SavingAccount("Alex", 101, 5000, 5);
 
 
-
+ 
 
 document.write(`<p>Account Holder: ${myAccount.name}</p>`);
 document.write(`<p>Account Number: ${myAccount.accountNo}</p>`);

@@ -2,7 +2,7 @@ const language=["html","css","java","javascript","python"];
 
 document.write(language.toString() + "<br>");
 
-document.write("<br>Length Of Array: " + language.length + "<br>");
+document.write("<h3><br>Length Of Array: " + language.length + "<br>");
 document.write("Type Of Array: " + typeof language + "<br>");
 
 document.write("<br>Get Single Element<br>");
@@ -49,7 +49,7 @@ document.write("Concat Array: " + result + "<br>");
 
 delete demo[1];
 document.write("Delete demo[1]: " + demo + "<br>");
-
+ 
 const numbers = [1, 2, 3, 4];
 const doubled = numbers.map(num => num * 2);
 document.write("<br> Map Function : ",doubled)

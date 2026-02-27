@@ -59,7 +59,7 @@ const mul = a => b => a * b
 const dou = mul(2)
 document.write("<br>Currying : ",dou(5))
 
-
+ 
 function customMap(arr, callbak) {
     const result = [];
   

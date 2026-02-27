@@ -28,14 +28,12 @@ const todoInput = document.getElementById("todoInput");
       span.textContent = task.text;
       if (task.completed) span.classList.add("completed");
 
-      // Toggle Complete
       span.addEventListener("click", () => {
         tasks[index].completed = !tasks[index].completed;
         saveTasks();
         renderTasks();
       });
 
-      // Edit Task
       span.addEventListener("dblclick", () => {
         const newText = prompt("Edit task:", task.text);
         if (newText !== null && newText.trim() !== "") {
@@ -45,7 +43,6 @@ const todoInput = document.getElementById("todoInput");
         }
       });
 
-      // Delete Button
       const delBtn = document.createElement("button");
       delBtn.textContent = "Delete";
       delBtn.addEventListener("click", () => {
@@ -54,7 +51,6 @@ const todoInput = document.getElementById("todoInput");
         renderTasks();
       });
 
-      // Move Up
       const upBtn = document.createElement("button");
       upBtn.textContent = "UP";
       upBtn.addEventListener("click", () => {
@@ -66,7 +62,6 @@ const todoInput = document.getElementById("todoInput");
         }
       });
 
-      // Move Down
       const downBtn = document.createElement("button");
       downBtn.textContent = "DOWN";
       downBtn.addEventListener("click", () => {
@@ -89,7 +84,7 @@ const todoInput = document.getElementById("todoInput");
     updateTaskCount();
   }
 
-  // Add Task
+
   addTodoBtn.addEventListener("click", () => {
     const text = todoInput.value.trim();
     if (!text) {
@@ -103,14 +98,14 @@ const todoInput = document.getElementById("todoInput");
     renderTasks();
   });
 
-  // Clear All
+
   clearAllBtn.addEventListener("click", () => {
     tasks = [];
     saveTasks();
     renderTasks();
   });
 
-  // Theme Save Function
+  
   function saveTheme(color) {
     localStorage.setItem("theme", color);
     document.body.style.backgroundColor = color;
@@ -125,5 +120,5 @@ const todoInput = document.getElementById("todoInput");
     document.body.style.backgroundColor = savedTheme;
   }
 
-  // Initial Load
+ 
   renderTasks();

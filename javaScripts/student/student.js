@@ -13,7 +13,8 @@ function calculate() {
     let percentage = total / 4; 
 
     let passing = 33;
-    let result = (guj >= passing && sci >= passing && math >= passing && eng >= passing) ? "PASS" : "FAIL";
+    let result = (guj >= passing && sci >= passing && math >= passing && 
+        eng >= passing) ? "PASS" : "FAIL";
 
     let grade;
     if (percentage >= 90) {

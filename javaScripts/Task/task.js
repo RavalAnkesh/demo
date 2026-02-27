@@ -46,7 +46,7 @@ async function handleSubmit(event) {
         event.preventDefault();
         const name = document.getElementById("name").value
         const feedback = document.getElementById("feedback").value
-  console.log({feedback});
+        
         const student = new Student(name, feedback)
         const manager = new FeedbackManager()
   

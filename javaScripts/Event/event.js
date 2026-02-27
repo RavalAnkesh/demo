@@ -38,8 +38,6 @@ keyInput.addEventListener("keydown", (event) => {
 });
 
 
-
-
 const focusInput = document.getElementById("focusInput");
 
 focusInput.addEventListener("focus", () => {

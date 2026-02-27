@@ -98,7 +98,7 @@ document.write("</ul>");
 
 
 
-
+ 
 function updatePrice(cart, name, newPrice){
     const item = cart.find(item => item.name === name);
     if(item) item.price = newPrice;
