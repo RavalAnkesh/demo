@@ -31,7 +31,7 @@ function clearAll() {
   display.value = "";
 }
 
-/* COUNTER */
+/* COUNTER  application*/
 let count = 0;
 let countText = document.getElementById("count");
 
