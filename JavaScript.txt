@@ -34,6 +34,7 @@ let s = "Hello, World!";
 let bool= true;
 
 4. Undefined: A variable that has been declared but not assigned a value.
+
 let notAssigned;
 console.log(notAssigned);
 Output
