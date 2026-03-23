@@ -2,7 +2,7 @@ JAVASCRIPT FULL TUTORIAL
 ----------------------------------------------------------------------------------------------------
 					Variable
 -------------------------------------------------------------------------------------------------------
-The var keyword is used to declare a variable. It has a function-scoped or globally-scoped behaviour.
+The var keyword is used to declare a variable. It has a function-scoped or globally-scoped both behaviour.
 var n = 5;
 console.log(n);
 
