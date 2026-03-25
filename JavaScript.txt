@@ -111,7 +111,7 @@ console.log(status);
 ------------------------------------------------------------------------------------------------------------------------------------
 [1]If Statement
 In this approach, we are using an if statement to check a specific condition,
-the code block gets executed when the given condition is satisfied.
+the code block gets executed when the given condition is satisfied
 
 [2]if-else
 when condition of if is setisfied execute if otherwise execute else 
