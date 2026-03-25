@@ -6,7 +6,7 @@ The var keyword is used to declare a variable. It has a function-scoped or globa
 var n = 5;
 console.log(n);
 
-var n = 20; // reassigning is allowed here
+var n = 20; // reassigning is allowed here.
 console.log(n);
 .......................................
 (let)block scope and cannot be re-declared in the same scope.
@@ -16,7 +16,7 @@ console.log(no);
 .......................................
 (const)The const keyword declares variables that cannot be reassigned. It's block-scoped as well.
 const num=10;
-//num=20(not allowed).
+//num=20(not allowed this).
 
 ......................................-------------------------------------------------------------------------------------------
 				DATA TYPES
