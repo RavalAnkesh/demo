@@ -4,12 +4,9 @@ public class thread {
         System.out.println("---- Single Thread ----");
 
         for (int i = 1; i <= 5; i++) {
-            System.out.println("Main Thread: " + i);
+            System.out.println("Main Thread: " );
         }
-
-        // ==============================
-        // 🔹 MULTITHREADING
-        // ==============================
+        
         System.out.println("---- Multithreading ----");
 
         // Thread 1
